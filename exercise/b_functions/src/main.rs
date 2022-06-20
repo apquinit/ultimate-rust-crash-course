@@ -1,9 +1,6 @@
 // Silence some warnings so they don't distract from the exercise.
 #![allow(unused_variables)]
 
-use b_functions::area_of;
-use b_functions::volume_of;
-
 fn main() {
     let width = 4;
     let height = 7;
@@ -30,3 +27,12 @@ fn main() {
     //
     println!("Volume is {}", volume_of(width, height, depth));
 }
+
+pub fn area_of(width: i32, height: i32) -> i32 {
+    width * height
+}
+  
+pub fn volume_of(width: i32, height: i32, depth: i32) -> i32 {
+    width * height * depth
+}
+  
